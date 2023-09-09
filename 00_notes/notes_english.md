@@ -1,6 +1,6 @@
 ### django for beginners
 
-> Words and expressions that now i don'thin it that all work together to power a web applicatio understand, because i'm beginner student of english.🌞
+> Words and expressions that now i don'thin it that all work together to power a web application understand, because i'm beginner student of english.🌞
 
 - **approach:** abordagem
 - **learning:** aprendizagem
@@ -28,4 +28,9 @@
 - **Since:** Como 
 - **keep:** Manter
 - **might:** pode
+- **Even though:** Mesmo assim
+- **rely:** confiar
+- **least | at least three:** minimo | pelo menos três
+- **ensure:** assegurar | garantir
+- **whenever:** sempre que  
 - 
