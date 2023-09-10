@@ -91,4 +91,27 @@ Ciclo HTTP request/response:
 
 *URL -> View -> Model (Tipically) -> Template*
 
+## Templates
 
+Arquivos HTML individuais que podem ser ligados entre si e também incluem a lógica básica do site. Para usar um templete fazemos um link do template a uma view.
+
+Tem duas abordagens para criar os nossos templates, uma é criar um diretório em cada app templates, e dentro do diretório templates, um novo diretório com o nome da app e finalmente criamos o nosso arquivo home.html que diz respeito ao nosso arquivo templates. **E teria que fazer isso para todas as apps, um trabalho um pouco repetitivo.**
+
+Então nosso sistema de arquivos ficaria assim
+- ``/{name-app}/templates/{name-app}/home.html``
+
+Por padrão o Django consegue identificar o arquivo como nosso template.
+
+Porém temos outra forma de fazer isso, mais amigável, criamos um diretório com o nome de templates fora da app, na raiz do diretório do projeto.
+Para isso precisamos falar para o Django onde está localizado nosso novo diretório templates, para isso temos que mudar uma linha no ``{name-project}/settings.py``.
+Adicionando o caminho que indica onde está os nossos arquivos templates: ``os.path.join(BASE_DIR, 'templates')``.
+
+```python
+TEMPLATES = [
+    {
+      ...
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # new
+      ...
+    },
+]
+```

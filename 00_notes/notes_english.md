@@ -33,4 +33,9 @@
 - **least | at least three:** minimo | pelo menos três
 - **ensure:** assegurar | garantir
 - **whenever:** sempre que  
+- **hundreds:** centenas
+- **thousands:** milhares
+- **somewhat:** um pouco | de certa forma
+- **seemingly:** parece que | aparentemente
+- **we’ll:** vamos
 - 
