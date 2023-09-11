@@ -115,3 +115,60 @@ TEMPLATES = [
     },
 ]
 ```
+
+O Django possui algumas views genéricas para conseguir simplificar alguns métodos, views baseadas em classes do python que facilitam a utilização e também estendem as views que resolve alguns problemas comuns.
+
+Para fazer utilização dessa view generica, Built-in, devemos atualizar o arquivo ``{name-project}/{name-app}/views.py``. Ela possui varios métodos que não precisam ser implemetados, como post, get, put, entre outros métodos.
+
+```python
+from django.views.generic import TemplateView
+
+class HomePageView(TemplateView):
+  template_name = 'home.html'
+```
+
+Quando utiliza views baseadas em classes, adiciona sempre as_view() no final do nome da view quando for referenciá-la.
+
+```python
+urlpatterns = [
+  path('', HomePageView.as_view(), name='home'),
+]
+```
+
+Podemos criar um template base para evitar repetir por exemplo código de cabeçalho, footer ou algo do tipo, para isso criamos um arquivo ``{name-project}/templates/base.html`` convencionalmente usamos esse nome.
+
+Para fazer isso usamos ``{% block content%}{endblock content}``.
+
+Como por exemplo, dado esse template pai:
+
+```html
+...
+<head>
+    <title>{% block title %}Título Padrão{% endblock title %}</title>
+</head>
+    ...
+    
+    <main>
+        {% block content %}
+        <p>Conteúdo padrão do site.</p>
+        {% endblock content %}
+    </main>
+...
+```
+
+Podemos usar em um template filho dessa forma:
+
+```html
+{% extends "base.html" %}
+
+{% block title %}Título da Página{% endblock title %}
+
+{% block content %}
+<p>Conteúdo específico da página.</p>
+<p>Este conteúdo substituirá o conteúdo padrão do site.</p>
+{% endblock content %}
+```
+
+Dessa forma conseguimos modificar um pouco a página sem precisar repetir todo o código reutilizando o que já está pronto.
+
+Em uma aplicação como essa, nós podemos olhar manualmente e ver que a página inicial e a página sobre existem e contém o conteúdo pretendido. Mas como um projeto Django cresce em tamanho, pode haver centenas, se não milhares de páginas web individuais e a idéia de passar manualmente por cada página não é possível.
