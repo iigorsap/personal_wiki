@@ -61,7 +61,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    '{app-name}.apps.{AppName-Config}',  # new app
+    '{app-name}.apps.{AppNameConfig}',  # new app
 ]
 ```
 

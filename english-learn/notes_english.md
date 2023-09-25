@@ -405,8 +405,62 @@ Could - Passado do Can | Podia, Poderia.
 
 ```
 
+# 9/19/2023
 
-<!-- - **approach:** abordagem
+## Can | Could
+
+> Can | Could : Modal Verbs, nunca usamos o to depois do proximo verbo que vim.
+
+```text
+
+I need to go to the bathroom
+Can I go to the bathroom?
+
+I want to open the window
+Can I open the window?
+
+I need you to lend me a pencil
+Can you lend me a pencil?
+
+I want to have a soda.
+Can I have a soda?
+
+I need to go now.
+Can I go now?
+
+I want you to help me.
+Can you help me?
+
+```
+
+```text
+**annotations**
+
+Get well soon! | "Fique bem logo", "Melhoras"
+
+to record : gravar /ri CÓRD/
+record: recorde /RÉ cord/
+
+order a pizza : pedir uma pizza
+
+I can't go in the beach, because is very far so my grandparents couldn't travel for a long time.
+
+take them = levá-los
+with music from the years
+
+choose : escolher
+already : já
+
+like - a ball like a orange _______ | uma bola tipo uma laranja
+kind - what kind of music do you __ | que tipo de música 
+
+to wish : Desejar
+
+```
+
+# Dictionary
+
+- **approach:** abordagem
 - **learning:** aprendizagem
 - **"and so on":**  e assim por adiante
 - **"Rather than":** em vez de 
@@ -443,29 +497,27 @@ Could - Passado do Can | Podia, Poderia.
 - **seemingly:** parece que | aparentemente
 - **we’ll:** vamos
 - **currency:** moeda do pais
-- **quite:** um pouco 
-
-- smell - cheirar|cheiro | Nose
-smelly - fedorento
-wave - acenar | abanar
-whole - tudo | inteiro
-
-lift / elevador / elevator (americano)
-much -> muito de intensidade
-many -> muito de quantidade  
-It depends. | Isto depende
-I agree with her/him | eu concordo com ela e ele
-let me (show, see)| deixe me (mostrar, ver)
-leave | partir / ir embora
-They are stuck there | estar preso em algum lugar
-My mouth likes this | Minha boca gosta disso
-Great taste | Gosto bom
-Hmm, this tastes good. | hmm, isso tem um gosto bom
-You have a great taste for music | Você tem um bom gosto musical
-to baking -> assar
-to take care of -> cuidar de 
-take care -> se cuida
-to feed -> alimentar
+- **quite:** um pouco
+- **smell:** cheirar | cheiro | Nose
+- **smelly:** fedorento
+- **wave:** acenar | abanar
+- **whole:** tudo | inteiro
+- **lift** elevador / elevator (americano)
+- **much:** muito de intensidade
+- **many:** muito de quantidade  
+- **It depends:** Isto depende
+- **I agree with her/him:** eu concordo com ela e ele
+- **let me (show, see):** deixe me (mostrar, ver)
+- **leave:** partir / ir embora
+- **They are stuck there:** estar preso em algum lugar
+- **My mouth likes this:** Minha boca gosta disso
+- **Great taste:** Gosto bom
+- **Hmm, this tastes good:** hmm, isso tem um gosto bom
+- **You have a great taste for music:** Você tem um bom gosto musical
+- **to baking:** assar
+- **to take care of:** cuidar de
+- **take care:** se cuida
+<!-- to feed -> alimentar
 bitch = cadela
 we are on the same boat -> estamos no mesmo barco.
 mate - companheiro | amigo
@@ -517,4 +569,4 @@ I'm not picky eater | Não sou exigente com a alimentação.
 blow | assoprar
 junk food | comida de má qualidade.
 lying in bed | Deitar na cama
-to lay down
+to lay down | Deitar-se -->
