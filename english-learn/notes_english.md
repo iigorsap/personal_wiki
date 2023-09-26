@@ -569,4 +569,6 @@ I'm not picky eater | Não sou exigente com a alimentação.
 blow | assoprar
 junk food | comida de má qualidade.
 lying in bed | Deitar na cama
-to lay down | Deitar-se -->
+to lay down | Deitar-se
+still | ainda 
+-->

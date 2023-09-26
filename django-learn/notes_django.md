@@ -172,3 +172,156 @@ Podemos usar em um template filho dessa forma:
 Dessa forma conseguimos modificar um pouco a página sem precisar repetir todo o código reutilizando o que já está pronto.
 
 Em uma aplicação como essa, nós podemos olhar manualmente e ver que a página inicial e a página sobre existem e contém o conteúdo pretendido. Mas como um projeto Django cresce em tamanho, pode haver centenas, se não milhares de páginas web individuais e a idéia de passar manualmente por cada página não é possível.
+
+## Database Model
+
+Para construir o nosso modelo de banco de dados primeiramente temos que importar o modulo ``models``, isto irá ajudar a construir nosso modelo de banco de dados.
+Esse modulo contém os tipos de campos do nosso modelo de dados entre outras funções auxiliares que contribui para nosso modelo de banco de dados. Como por exemplo:
+
+```python
+# {name-project}/{name-model}/models.py
+from django.db import models
+
+# Create your models here
+class NameModel(models.Model):
+    text = models.TextField()
+```
+
+O django disponibiliza varios tipos de campos como:
+
+```python
+models.CharField(max_length=n, ...)
+models.ForeignKey(...)
+models.DateField(...)
+models.IntegerField(...)
+```
+
+## Activating models
+
+Quando nosso novo modelo é criado, precisamos ativá-lo. Após isso, sempre que criarmos ou modificarmos um modelo existente, precisaremos atualizar o Django em um processo de duas etapas:
+
+```python
+
+# Arquivo de migrações referência todas as alterações nos modelos de banco de dados, tornando todas as alterações rastreáveis.
+
+python manage.py makemigrations {name-app}
+
+# Criando o banco de dados real, executando as instruções do nosso arquivo migrate.
+
+python manage.py migrate
+```
+
+Para administrar nossos modelos é possivel acessar um painel bem completo para admnistração desenvolvido para o Django, como ele podemos inclusive gerenciar nosso banco de dados. Para isso precisamos criar um usuário chamado de super usuário.
+
+Para criar o superuser precisamos usar o seguinte comando na linha de comando:
+
+```
+python manage.py createsuperuser
+
+# Após a configuração, acessando http://127.0.0.1:8000/admin/, temos nosso painel admin.
+
+```
+
+Para que nossa aplicação seja vista no nosso painel admin, precisamos passar para o django explicitamente igual fizemos com nas aplicações INSTALLED_APPS. Para isso precisamos alterar nosso arquivo ``{name-model}/admin.py`` e adicionar uma nova linha onde passamos o nosso model para o nosso admin e mostramos a existência dele.
+
+```python
+from django.contrib import admin
+from .models import {name-model}
+
+
+# Register your models here.
+admin.site.register({name-model})
+```
+
+Agora o Django conhece nossa app, ficando disponível no django admin, podendo adicionar algum conteúdo de acordo com os campos que colocamos no nosso modelo, criando objetos do nosso model.
+
+Podemos renomear cada instância do nosso modelo para não ser criados modelos com nomes genéricos, para isso precisamos adicionar a linha de código para adicionarmos um novo campo no nosso modelo, essa linha vai pegar os primeiros 50 caracteres do nosso modelo, e colocar como nome deixando o objeto mais representativo.
+
+```python
+# {name-project}/{name-model}/models.py
+
+class {NameModel}(models.Model):
+    ...
+
+    def __str__(self):
+      return self.text[:50]
+```
+
+### Views/Templates/URLs
+
+Para exibir nosso database no site precisamos fazer o link com as nossas views, templates e urls.
+
+Arquivo view:
+
+```python
+
+# {name-project}/{name-model}/views.py
+
+from django.shortcuts import render
+from django.views.generic import ListView
+from .models import {NameModel} # class
+# Create your views here.
+
+
+class HomePageView(ListView):
+    model = {NameModel}
+    template_name = 'home.html'
+    context_object_name = {name-object}
+
+```
+
+Arquivo template:
+
+```html
+
+<!-- {name-project}/templates/home.html -->
+
+<h1> HomePage </h1>
+
+<ul>
+	{% for {name-model} in {name-object} %}
+		<li>{{ {name-model}.text }}</li>
+	{% endfor %}
+</ul>
+
+```
+
+Arquivo URLs:
+
+```python
+
+# {name-project}/urls.py
+
+from django.contrib import admin
+from django.urls import path, include # new
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('{name-model}.urls')), # new
+]
+```
+
+Arquivo URLs do Projeto:
+
+```python
+# {name-project}/urls.py
+from django.contrib import admin
+from django.urls import path, include # new
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('{name-app}.urls')), # new
+]
+
+```
+
+Criamos também arquivo URLs da app:
+
+```python
+from django.urls import path
+from .views import HomePageView
+
+urlpatterns = [
+    path('', HomePageView.as_view(), name='home'),
+]
+```
