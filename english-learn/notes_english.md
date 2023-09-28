@@ -555,50 +555,50 @@ a good night's sleep : uma boa noite de sono.
 - **to baking:** assar
 - **to take care of:** cuidar de
 - **take care:** se cuida
-**to feed:** alimentar
-**bitch:** cadela
-**we are on the same boat: **estamos no mesmo barco.
-**mate: companheiro:** amigo
-**as if you were:** (como se você estivesse "imaginação") 
-**have you met:** (você encontrou/conheceu?)
-**let me think:** Me deixe pensar
-**shelf:** estante
-**I will do:** Eu vou fazer
-**Share it with us:** Compartilha isso com a gente
-**Sorry for interrupt:** Desculpa interromper
-**Same old:** as mesmas coisas de sempre
+- **to feed:** alimentar
+- **bitch:** cadela
+- **we are on the same boat:**estamos no mesmo barco.
+- **mate: companheiro:** amigo
+- **as if you were:** (como se você estivesse "imaginação") 
+- **have you met:** (você encontrou/conheceu?)
+- **let me think:** Me deixe pensar
+- **shelf:** estante
+- **I will do:** Eu vou fazer
+- **Share it with us:** Compartilha isso com a gente
+- **Sorry for interrupt:** Desculpa interromper
+- - **Same old:** as mesmas coisas de sempre
 **Same things:** As mesma coisas
-**Doente:** sick
-**taking examinations:** fazendo exames
-**to take:** tomar, levar, pegar
-**A litte boy is taking medication:** tomando remédio.
-**remedy:** remédio caseiro
-**medication:** medicação de farmácia
-**bolsa de água quente:** heating pad 
-**put:** colocar
-**I have a fever:** Eu estou com febre
-**Food poisoning:** Intoxicação Alimentar
-**I have the flu:** Estou Gripado
-**I have a cold:** Eu estou resfriada
-**My legs hurt:** minas pernas doem
-**hurt:** doem
-**heart:** coração
-**I have pain in my legs:** Eu tenho dor nas pernas
-**pain:** dor
-**Sore:** dolorido
-**headache:** dor de cabeça
-**stomachache:** dor de estomago
-**sore:** dolorido
-**I have a sore throat:** Estou com dor de garganta
-**a driver's license.:** Carteira de Motorista
-**my bad:** foi mal
-**noodles with sausage:** macarrão com salsicha
-**Nobody:** Ninguém
-**Improve:** Melhorar
-**Any other ideas?:** Alguma outra ideia?
-**I'm not picky eater:** Não sou exigente com a alimentação.
-**blow:** assoprar
-**junk food:** comida de má qualidade.
-**lying in bed:** Deitar na cama
-**to lay down:** Deitar-se
-**still:** ainda 
+- **Doente:** sick
+- **taking examinations:** fazendo exames
+- **to take:** tomar, levar, pegar
+- **A litte boy is taking medication:** tomando remédio.
+- **remedy:** remédio caseiro
+- **medication:** medicação de farmácia
+- **bolsa de água quente:** heating pad 
+- **put:** colocar
+- **I have a fever:** Eu estou com febre
+- **Food poisoning:** Intoxicação Alimentar
+- **I have the flu:** Estou Gripado
+- **I have a cold:** Eu estou resfriada
+- **My legs hurt:** minas pernas doem
+- **hurt:** doem
+- **heart:** coração
+- **I have pain in my legs:** Eu tenho dor nas pernas
+- **pain:** dor
+- **Sore:** dolorido
+- **headache:** dor de cabeça
+- **stomachache:** dor de estomago
+- **sore:** dolorido
+- **I have a sore throat:** Estou com dor de garganta
+- **a driver's license.:** Carteira de Motorista
+- **my bad:** foi mal
+- **noodles with sausage:** macarrão com salsicha
+- **Nobody:** Ninguém
+- **Improve:** Melhorar
+- **Any other ideas?:** Alguma outra ideia?
+- **I'm not picky eater:** Não sou exigente com a alimentação.
+- **blow:** assoprar
+- **junk food:** comida de má qualidade.
+- **lying in bed:** Deitar na cama
+- **to lay down:** Deitar-se
+- **still:** ainda 
