@@ -433,8 +433,9 @@ Can you help me?
 
 ```
 
+**annotation**
+
 ```text
-**annotations**
 
 Get well soon! | "Fique bem logo", "Melhoras"
 
@@ -455,6 +456,43 @@ like - a ball like a orange _______ | uma bola tipo uma laranja
 kind - what kind of music do you __ | que tipo de música 
 
 to wish : Desejar
+
+```
+
+
+# 9/26/2023
+
+## Giving advice
+
+**annotation**
+
+```text
+to give advice to: Dar conselhos para
+to take advice to: Receber conselhos para
+
+{advice sempre vem acompanhando por to, não usamos o for}
+
+to advise: aconselhar
+
+to travel: viajar
+trip: viagem
+
+at least : ao menos, pelo menos
+
+nutrition : alimentação
+meals : refeição
+
+drink alcohol : beber alcool
+
+Modais Verbs
+Can : Poder
+Should : Deveria
+Could : Poderia
+
+You should dance like terry crews with weights in your hands.
+
+a good night's sleep : uma boa noite de sono.
+
 
 ```
 
