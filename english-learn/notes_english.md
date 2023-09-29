@@ -464,7 +464,7 @@ to wish : Desejar
 
 ## Giving advice
 
-**annotation**
+**class annotations**
 
 ```text
 to give advice to: Dar conselhos para
@@ -566,8 +566,8 @@ a good night's sleep : uma boa noite de sono.
 - **I will do:** Eu vou fazer
 - **Share it with us:** Compartilha isso com a gente
 - **Sorry for interrupt:** Desculpa interromper
-- - **Same old:** as mesmas coisas de sempre
-**Same things:** As mesma coisas
+- **Same old:** as mesmas coisas de sempre
+- **Same things:** As mesma coisas
 - **Doente:** sick
 - **taking examinations:** fazendo exames
 - **to take:** tomar, levar, pegar
@@ -602,3 +602,4 @@ a good night's sleep : uma boa noite de sono.
 - **lying in bed:** Deitar na cama
 - **to lay down:** Deitar-se
 - **still:** ainda 
+- **Don’t worry**: Não se preocupe

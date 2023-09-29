@@ -1,25 +1,63 @@
 # Commands
 
-Install django
-```
+```python
+# Instalando o django
+
 pip install django
 ```
-Create django project
-```
+
+```python
+# Criando projeto django
+
 django-admin startproject {project-name} .
 ```
-Running local server django
-```
+
+```python
+# Rodando o servidor local do django
+
 py manage.py runserver
 ```
-Apply the changes made to a model, to apply those changes to the database.
-```
+
+```python
+# Aplicando as mudanças feito no arquivo model, para aplicar essas mudando na base de dados.
+
 py manage.py migrate
 ```
-create an app
-```
+
+```python
+# Criando uma app no Django
+
 py manage.py startapp {app-name}
 ```
+
+```python
+# Arquivo de migrações referência todas as alterações nos modelos de banco de dados, tornando todas as alterações rastreáveis.
+
+python manage.py makemigrations {name-app}
+```
+
+```python
+# Criando o banco de dados real, executando as instruções do nosso arquivo migrate.
+
+python manage.py migrate
+```
+
+```python
+# Para criar o superuser precisamos usar o seguinte comando na linha de comando:
+
+
+python manage.py createsuperuser
+
+# Após a configuração, acessando http://127.0.0.1:8000/admin/, temos nosso painel admin.
+```
+
+```python
+# Rodar os testes da nossa app:
+
+python manage.py test
+```
+
+
 
 ---
 # Understanding project files
@@ -215,7 +253,7 @@ Para administrar nossos modelos é possivel acessar um painel bem completo para 
 
 Para criar o superuser precisamos usar o seguinte comando na linha de comando:
 
-```
+```python
 python manage.py createsuperuser
 
 # Após a configuração, acessando http://127.0.0.1:8000/admin/, temos nosso painel admin.
@@ -324,4 +362,32 @@ from .views import HomePageView
 urlpatterns = [
     path('', HomePageView.as_view(), name='home'),
 ]
+```
+
+Também é preciso realizar tests para garantir que o objeto criado do nosso modelo está correto, para isso não precisamos referenciar nosso modelo, somente criar uma instância no próprio teste e verificar se está tudo conforme o esperado, assim como no exemplo abaixo:
+
+```python
+
+from django.test import TestCase
+from .models import {name-model}
+
+
+# Create your tests here.
+def {{nome-model}ModelTest}(TesteCase):
+
+    # set a name
+    def setUp(self):
+        {name-model}.objects.create(text='just a test')
+
+    # verifyng the name
+    def teste_text_content(self):
+        {var-objeto-model} = {name-model}.objects.get(id=1)
+        expected_object_name = f"{{var-objeto-model}.text}"
+        self.assertEqual(expected_object_name, 'just a test')
+```
+
+Para rodar os testes usados o ``manage.py``:
+
+```
+python manage.py test
 ```
