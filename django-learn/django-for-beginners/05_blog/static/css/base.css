@@ -1,0 +1,24 @@
+/* global */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+header { 
+    border-bottom: 1px solid #999;
+    margin-bottom: 2rem;
+}
+
+header h1 a {
+    color : red;
+    text-decoration: none;
+}
+
+/* home.html */
+
+.post-entry h2 a, 
+.post-entry h2 a:visited{
+    color: aqua;
+    text-decoration: none;
+}

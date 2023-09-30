@@ -603,3 +603,4 @@ a good night's sleep : uma boa noite de sono.
 - **to lay down:** Deitar-se
 - **still:** ainda 
 - **Don’t worry**: Não se preocupe
+- **straightforward**: Simples 
