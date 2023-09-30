@@ -163,6 +163,9 @@ from django.views.generic import TemplateView
 
 class HomePageView(TemplateView):
   template_name = 'home.html'
+  context_object_name = 'exemplo' 
+  
+# Este campo context_object_name é usado para redefinir o nome do context object, por exemplo se quiser usar outro nome ao invés de usar object ou nome padrão do model.   
 ```
 
 Quando utiliza views baseadas em classes, adiciona sempre as_view() no final do nome da view quando for referenciá-la.
