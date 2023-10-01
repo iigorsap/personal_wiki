@@ -599,8 +599,15 @@ a good night's sleep : uma boa noite de sono.
 - **I'm not picky eater:** Não sou exigente com a alimentação.
 - **blow:** assoprar
 - **junk food:** comida de má qualidade.
-- **lying in bed:** Deitar na cama
-- **to lay down:** Deitar-se
+- **"lying in bed":** Deitar na cama
+- **"to lay down":** Deitar-se
 - **still:** ainda 
-- **Don’t worry**: Não se preocupe
+- **"Don’t worry"**: Não se preocupe
 - **straightforward**: Simples 
+- **"As we touched upon"**: Conforme mencionamos | Como já abordámos
+- **been**: ter sido | foram | foi
+- **"day to day"**: dia a dia
+- **among**: entre 
+- **such**: tal | tais | como | for such systems 
+- **made**: feito | realizado
+- **to deal**: para lidar 
