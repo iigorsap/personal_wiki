@@ -459,7 +459,6 @@ to wish : Desejar
 
 ```
 
-
 # 9/26/2023
 
 ## Giving advice
@@ -492,8 +491,39 @@ Could : Poderia
 You should dance like terry crews with weights in your hands.
 
 a good night's sleep : uma boa noite de sono.
+```
 
+# 10/3/2023
 
+## Making Comparisons
+
+**class annotations**
+
+```text
+
+I'd like= I would like = Eu gostaria
+I was very afraid/ scared = Eu estava com muito medo.
+I enrolled = Eu me inscrevi
+
+clothes {pronuncia: clouz}
+ugly: feio
+skirt: saia
+
+Nós colocamos adjetivo antes da palavra onde estamos descrevendo ou depois do verbo to be.
+exemplos:
+    - the *new* coat is **blue**
+    = the *red* skirt is **beautiful**
+trainers (ingles britânico): tenis 
+sneakers (ingles americano): tenis
+
+Comparative Adjectives: 
+    Compare 2 nouns.
+
+![Alt text](image.png)
+
+The shoes are huglier than sneakers
+The snaekers are more versatility than shoes
+The shoes are more formal than sneakers 
 ```
 
 # Dictionary

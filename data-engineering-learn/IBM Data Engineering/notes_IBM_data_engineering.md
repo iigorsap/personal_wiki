@@ -59,4 +59,3 @@ Os profissionais de dados precisam de uma série de linguagens que possam ajudá
 - Um dos principais objectivos da modelação da gestão de Metadata empresariais é a criação e manutenção de um catálogo de dados fiável e de fácil utilização
 - O acesso a um catálogo de dados bem implementado melhora consideravelmente a descoberta de dados, a repetibilidade, a governação e pode também facilitar o acesso aos dados
 - As ferramentas de gestão de Metadata da IBM incluem o InfoSphere Information Server e o Watson Knowledge Catalog.
-
