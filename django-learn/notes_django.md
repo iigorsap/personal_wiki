@@ -394,3 +394,103 @@ Para rodar os testes usados o ``manage.py``:
 ```
 python manage.py test
 ```
+
+## Forms
+
+Para trabalhar com formulário é preciso criar uma link primeiramente, que vai redirecionar para a adição, update ou delete da informação requerida, seja um post, uma receita, um comentário.
+
+```html
+<a href="{% url '{name-model}_new' %}">add</a>
+<a href="{% url '{name-model}_edit' {name-model}.pk %}">edit</a>
+<a href="{% url '{name-model}_delete' {name-model}.pk %}">delete</a>
+```
+
+Depois é preciso referenciar uma url para o nosso template, para isso precisamos criar a view que irá ser usada para mostrar a informações na tela. Vamos criar a nossa view usando como super classe views genericas já presente na biblioteca padrão do django. ``django.views.generic.edit`` 
+
+```python
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+	
+class {name-model}CreateView|UpdateView|DeleteView(CreateView|UpdateView|DeleteView):
+	model = {name-model}
+	template_name = {name-template}.html
+	fields = [] # campos para views [create, update]
+	sucess_url = reverse_lazy('home') # Oposto do reverse(), essa função redireciona para uma url como sucesso do delete [delete]
+```
+
+Após a criação da view, é preciso agora referenciar em uma URL como mencionado antes.
+
+```python
+from .views import (
+	{name-app}UpdateView,
+	{name-app}CreateView,
+	{name-app}DeleteView,
+)
+
+urlpatterns = [
+	path('{name-model}/<int:pk>/delete/', {nname-app}DeleteView.as_view(), name='{name-model}_delete'),
+	path('{name-model}/add/', {name-app}CreateView.as_view(), name='{name-model}_add'),
+	path('{name-model}/<int:pk>/edit/', {name-app}UpdateView.as_view(), name='{name-model}_edit'),
+]
+```
+
+Agora criamos os templates para nossas views.
+
+```html
+<!-- add {model}  -->
+
+{% extends 'base.html' %} 
+
+{% block content %}
+	<h1>
+    	Add {model}
+	</h1>
+	<form action="" method="post">{% csrf_token %} 
+		{{ form.as_p }}
+		<input type="submit" value="Update">
+	</form>
+{% endblock content %}
+
+```
+
+```html
+<!-- edit {model}  -->
+
+{% extends 'base.html' %} 
+
+{% block content %}
+	<h1>
+    	Edit {model}
+	</h1>
+  	<form action="" method="post">{% csrf_token %} 
+			{{ form.as_p }}
+			<input type="submit" value="Update">
+  	</form>
+{% endblock content %}
+
+```
+
+```html
+<!-- delete {model} -->
+
+{% extends 'base.html' %} 
+
+{% block content %}
+	<h1>
+    	Delete {model}
+	</h1>
+  	<form action="" method="post">{% csrf_token %} 
+		<p>Are you sure you want to delete "{{ {model}.title }} ?</p>
+    	<input type="submit" value="Confirme">
+  	</form>
+{% endblock content %}
+
+```
+
+Podemos seguir a sugestão do Django e adicionar um get_absolute_url ao nosso modelo. Essa é uma prática recomendada que você deve sempre fazer. Ela define um URL canônico para um objeto, portanto, mesmo que a estrutura de seus URLs mude no futuro, a referência ao objeto específico específica será a mesma. Em resumo, você deve adicionar um método ``get_absolute_url()`` e ``__str__()`` a em cada modelo que você escrever.
+
+```python
+def get_absolute_url(self): # new
+	return reverse('post_detail', args=[str(self.id)])
+```
+
+
