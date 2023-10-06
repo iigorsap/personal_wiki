@@ -87,11 +87,11 @@ Os bancos de dados relacionais usam SQL para consultar dados, o que oferece a va
 
 ### Exemplos de RDBMS:
 
-![Untitled](Certificado%20Profissional%20IBM%20Data%20Engineering%209fec6b8e230146bc866750e6f7bca147/Untitled.png)
+![Untitled](Certificado%20Profissional%20IBM%20Data%20Engineering/Untitled.png)
 
 **Cloud-Based**
 
-![Untitled](Certificado%20Profissional%20IBM%20Data%20Engineering%209fec6b8e230146bc866750e6f7bca147/Untitled%201.png)
+![Untitled](Certificado%20Profissional%20IBM%20Data%20Engineering/Untitled%201.png)
 
 ### Casos de Uso
 
