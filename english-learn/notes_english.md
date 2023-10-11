@@ -525,7 +525,45 @@ The shoes are huglier than sneakers
 The snaekers are more versatility than shoes
 The shoes are more formal than sneakers 
 ```
+# 10/10/2023
 
+**class annotations**
+
+##
+
+```text
+
+In what sense : Em que sentido?
+
+{
+    1: I don't know what to wear to this party today. Should I wear the **white or the red shirt.**
+
+    2: The white one looks **older** than the red one.
+
+    1: You are right, but the white one is more comfortable **than** red one.
+
+    2: You should wear your new **blue** sneakers. They are beautiful.
+
+    1: It's a formal party. I should wear shoes, beacause they are **more formal** than sneakers.
+
+    2: Which **pants** do you prefer? the blue **one** or the black **one**?
+
+    1: The black one is **newer** than the blue one.
+
+    2: Great. Now you are dressed to kill.9
+}
+
+one: substitui uma coisa que já foi falado antes, como sabemos que estamos falando da "shirt" colocamos o "one" depois pra não precisar repetir. 
+[Substitui um substantivo mencionado na frase para não repetir.]
+
+Have a good one. Expressão usada para se referir ao assunto da conversa. Exemplo:
+{
+    1: My weekend...!
+    2: Have a good one!
+}
+
+
+```
 # Dictionary
 
 - **approach:** abordagem
