@@ -13,3 +13,18 @@ new words:
 - due to.
 - owns.
 - to reach.
+
+# 10/9/2023
+
+new words:
+
+- piece
+- gotchas
+- whenever
+- since
+- concerns
+- namely
+- outputted
+- Upon
+- beneath
+- ahead
