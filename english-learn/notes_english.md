@@ -533,6 +533,8 @@ The shoes are more formal than sneakers
 
 ```text
 
+Comparative: Compare two elements.
+
 In what sense : Em que sentido?
 
 {
@@ -561,9 +563,35 @@ Have a good one. Expressão usada para se referir ao assunto da conversa. Exempl
     1: My weekend...!
     2: Have a good one!
 }
+```
 
+# 10/17/2023
+
+**class annotations**
+
+```text
+Superlative: Compare to the whole group. > Whole group | grupo inteiro | o grupo todo
+
+Short adjectives receive -est:
+    - big   = the biggest
+    - small = the smallest
+    - dirty = the dirtiest
+    - cheap = the cheapest
+Long adjectives receive "the most"
+    - beautiful = the most beautiful
+    - expensive = the most expensive
+
+Irregular Adjetivos
+
+Adjetivo:    good     |  bad     
+Comparative: better   |  worse
+Superlative: the best |  the worst
+
+
+Roupas de marca | Designer Clothes
 
 ```
+
 # Dictionary
 
 - **approach:** abordagem
