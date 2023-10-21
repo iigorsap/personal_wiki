@@ -1,0 +1,3 @@
+> gcc nomedoarquivo.c -o nomedasaida -Wall
+> ./nomedasaida < nomedaentrada
+
