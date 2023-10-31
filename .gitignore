@@ -400,3 +400,6 @@ FodyWeavers.xsd
 # envs
 
 ./test_project/django
+!/data-engineering-learn/Python/.idea/
+!/data-engineering-learn/Python/.idea/
+/data-engineering-learn/Python/.idea/
