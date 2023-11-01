@@ -405,4 +405,4 @@ FodyWeavers.xsd
 !/data-engineering-learn/python/.idea/
 /data-engineering-learn/python/.idea/
 
-*.idea/
+.idea/*
