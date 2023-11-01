@@ -324,7 +324,7 @@ paket-files/
 # CodeRush personal settings
 .cr/personal
 
-# Python Tools for Visual Studio (PTVS)
+# python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
 
@@ -401,8 +401,8 @@ FodyWeavers.xsd
 # envs
 
 ./test_project/django
-!/data-engineering-learn/Python/.idea/
-!/data-engineering-learn/Python/.idea/
-/data-engineering-learn/Python/.idea/
+!/data-engineering-learn/python/.idea/
+!/data-engineering-learn/python/.idea/
+/data-engineering-learn/python/.idea/
 
 *.idea/
