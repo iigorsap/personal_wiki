@@ -404,3 +404,5 @@ FodyWeavers.xsd
 !/data-engineering-learn/Python/.idea/
 !/data-engineering-learn/Python/.idea/
 /data-engineering-learn/Python/.idea/
+
+*.idea/
