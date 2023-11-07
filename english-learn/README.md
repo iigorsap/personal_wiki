@@ -587,9 +587,47 @@ Adjetivo:    good     |  bad
 Comparative: better   |  worse
 Superlative: the best |  the worst
 
-
 Roupas de marca | Designer Clothes
 
+```
+
+# 11/7/2023
+
+```text
+CEO : chief executive officer
+CFO : chief finantial officer
+
+to get retired : se aposentar
+
+others : só sera usado sozinho
+
+House chores[especifica para casa]: Tarefas domésticas
+
+Does it work? : Isso funciona?
+
+and that's it : e é isso. 
+
+I choose Tag Heuer Watch, because it's cost benefit relationship than other watches.
+It is chepest than Ferrari Watch and has a better customers' opinion than Ferrari.
+
+for you to eat in the travel / on the way?
+for you to do / for you to eat?
+```
+#### Intensifier + Adjective / Characteristic
+
+```text
+INTENSIFIER + ADJECTIVE/ CHARACTERISTIC 
+
+VERY= MUITO REALLY= REALMENTE 
+EXTREMELY= EXTREMAMENTE 
+GREAT= GRANDE, MUITO, BASTANTE 
+SUPER=SUPER | THIS IS SUPER NICE. 
+SO=TÃO | THIS IS SO NICE.
+A LITTLE=PEQUENO, POUCO.
+not that = não tão | it's not that important 
+Not ... at all: de jeito nenhum, de forma alguma 
+    | I don't have to bring my keys at all.
+    | It's not important to bring your keys at all.
 ```
 
 # Dictionary
