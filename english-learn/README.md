@@ -616,7 +616,7 @@ for you to do / for you to eat?
 #### Intensifier + Adjective / Characteristic
 
 ```text
-INTENSIFIER + ADJECTIVE/ CHARACTERISTIC 
+# INTENSIFIER + ADJECTIVE/ CHARACTERISTIC 
 
 VERY= MUITO REALLY= REALMENTE 
 EXTREMELY= EXTREMAMENTE 
@@ -624,12 +624,93 @@ GREAT= GRANDE, MUITO, BASTANTE
 SUPER=SUPER | THIS IS SUPER NICE. 
 SO=TÃO | THIS IS SO NICE.
 A LITTLE=PEQUENO, POUCO.
+
+# Downtoners
+
 not that = não tão | it's not that important 
 Not ... at all: de jeito nenhum, de forma alguma 
     | I don't have to bring my keys at all.
     | It's not important to bring your keys at all.
 ```
+# 11/14/2023
 
+```text
+Describe it: Remembering THERE BE verb
+
+There is a headset and there is a pair of shoes.
+There aren't clothes.
+There is a bottle in the bag.
+There is one camera.
+There are socks
+There are pants
+
+luggage : mala
+
+There aren't shirts in the luggage.
+There is a cap.
+
+few : algumas, alguns -> (few) Sensação de pouco, quantidade, não ser suficiente 
+    To put a few things inside your bag [to pack light] : fazer as malas com poucas coisas.
+    Já joguei algumas mas queria jogar mais (Sensação de não suficiente)
+some : algumas, alguns -> já joguei algumas partidas não vou jogar mais (Sensação de muito)
+```
+## Role Play 
+```text
+Debora: Let's go to Disney, we can do everything over there!
+
+Igor: Yes, we can go, I agree, and you Gabriela?
+
+Gabriela: Me too, what can we to bring?
+
+Debora: Is extremely important to bring passport, personal documents, summer clothes and your toiletries.
+
+Igor: Let's try to pack light, because our car is very old, what do you think Gabriela?
+
+Gabriela: Yes, it's very necessary. but we can't forget about money 💵, and to travel on a budget, please.
+
+Igor: Yes, we are poor 😢
+
+Gabriela: I think that don't need to take many personal hygiene products. The hotels provide very things.
+```
+
+# 11/21/2023
+
+```text
+It's very necessary to bring some jackets.
+It's not important to bring some beach clothes (todas as roupas)/bathing suit(roupas para entrar na piscina) at all.
+It's not that important to bring shorts. 
+```
+
+### Making a decision
+
+to choose, choosing | Escolher.
+what about shoes? | E quanto aos calçados?
+
+
+to choose= escolher
+Are you an indecisive person
+
+```text
+there is to eat. / whatever I have at home. / whatever there is at home.  / all there is. / picky eater 
+I'm not a picky eater. :: Eu como tudo que tiver, eu como de tudo.
+
+iNdecisive
+It's 
+one pair of pants
+some pants 
+sneakers= tenis
+```
+### Comparative adjectives
+
+```text
+to do:
+    latpot - good features
+        | Apple laptops HAVE more good features with iphones than samsung phones.
+    
+```
+
+
+````
 # Dictionary
 
 - **approach:** abordagem
