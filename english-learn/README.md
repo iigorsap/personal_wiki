@@ -708,7 +708,67 @@ to do:
         | Apple laptops HAVE more good features with iphones than samsung phones.
     
 ```
+# 11/21/2023
 
+**class annotations**
+
+```text
+about it : sobre isso
+to spend : gastar
+to celebrate : celebrar
+to pray : rezar
+to get on our kness : se ajoelhar
+then: e então, então, e aí...
+then: no passado, lá atrás
+New year's Eve : Véspera de Ano Novo
+
+sempre que tiver um "of" e depois um verbo, terá ing no final
+example: 
+    we don't have the costume of celebrating
+ 
+making a toast : fazendo um brinde
+
+Let's make a toast | Vamos fazer um drink
+    Cheers              Saúde
+
+witch | bruxa
+mummy | mumia
+```
+### Simple Past 
+
+#### Be
+```text
+
+is- was 
+are- were 
+am- was 
+
+was/were = era, estava
+were= /uãrr/ 
+
+I was tired. 
+I wasn't / was not/ tired.
+Was I tired?
+
+They were happy. 
+They weren't happy. 
+Were they happy?
+```
+**Activities | Unscramble**
+
+```text
+1. How was your Christmas?
+2. It was a very nice dinner.
+3. My family wasn't all united.
+4. My cousins from Rio weren't there.
+5. There was a lot of food.
+6. We were so full. 
+
+full = cheio
+    we were so full = Nós estamos tão cheios 
+    I'm full of this = Estou cansado disso.
+    I'm full of this shit = Estou muito cansado disso.
+```
 
 ````
 # Dictionary
