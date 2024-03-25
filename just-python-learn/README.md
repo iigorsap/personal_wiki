@@ -1,5 +1,5 @@
-## Django Books
+## Python Books
 
 | Book | Author            | Pages |
 |:----:|-------------------|-------|
-|**Django for Beginners : Build Websites with Python & Django**| William S. Vicent |168/**300**|
+|**Python Crash Course**| Eric Matthes |y/**x**|
