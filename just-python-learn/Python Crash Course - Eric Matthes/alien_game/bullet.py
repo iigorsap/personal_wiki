@@ -20,7 +20,6 @@ class Bullet(Sprite):
     corresponder ao atributo midtop da nave. Isso fará com que a bala saia do topo da nave, 
     fazendo com que pareça que a bala foi disparada da nave. Usamos um float para a coordenada y 
     da bala para que possamos fazer ajustes finos na velocidade da bala. 
-    Aqui está a segunda parte do bullet.py, update() e draw_bullet()
     """    
     def __init__(self, ai_game):
         super().__init__()
@@ -33,6 +32,22 @@ class Bullet(Sprite):
         self.rect.midtop = ai_game.ship.rect.midtop
 
         # Store the bullet's posisition as a float
-        self.y = float(self.rec.y)
-      
-        
+        self.y = float(self.rect.y)
+        self.moving_up = False
+
+    # Aqui está a segunda parte do bullet.py, update() e draw_bullet()
+    def update(self):
+        """Move the bullet up the screen"""
+        # Update the exact position of the bullet.
+        self.y -= self.settings.bullet_speed
+        # Update rect position.
+        self.rect.y = self.y
+
+    def draw_bullet(self):
+        """Draw the bullet to the screen"""
+        """
+        A função draw.rect() preenche a parte da tela definida pelo  bullet's rect
+        com a cor armazenada em self.color
+        """
+        pygame.draw.rect(self.screen, self.color, self.rect)
+    
