@@ -1,0 +1,15 @@
+<!DOCTYPE html> {# DOCTYPE diz quel versão da linguagem está sendo usada #} 
+<html lang="en"> {# Delimita o documento html #} 
+<head> {# Definicao do cabecalho do documento #}
+    <meta charset="UTF-8"> {# Definir qual o conjunto de caracteres sera usado para renderizar a pagina #}
+    <title>{% block title %} Newspaper App {% endblock title %}</title>
+</head>
+<body> 
+    <main>
+        {% block content %}
+            
+        {% endblock content %}
+            
+    </main>
+</body>
+</html>
