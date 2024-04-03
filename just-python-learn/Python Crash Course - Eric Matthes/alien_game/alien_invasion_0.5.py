@@ -56,16 +56,7 @@ class AlienInvasion:
         while True:
             self._check_events()
             self.ship.update()
-            # Eliminar os bullets que desapareceram como não é possivel remover os elementos de uma lista
-            # ou grupo enquanto itera sobre eles, usamos uma copia do groupo de bullets assim conseguimos
-            # referenciar o bullet no grupo principal e removê-lo, caso ele tiver passado do topo da tela.
-            for bullet in self.bullets.copy():
-                if bullet.rect.bottom <= 0:
-                    self.bullets.remove(bullet)
-            
-            # print(len(self.bullets))
-
-            self.bullets.update()
+            self._update_bullets()
             self._update_screen()
             self.clock.tick(60) # O método tick() recebe um argumento: a taxa de quadros do jogo.
 
@@ -135,10 +126,23 @@ class AlienInvasion:
     
     def _fire_bullet(self):
         """Criando um novo tiro e adicionando ele ao grupo de tiros da nave"""
-        new_bullet = Bullet(self)
-        # add() é similar a append(), porém foi uma método especificamente para lidar 
-        # com pygame.groups
-        self.bullets.add(new_bullet)
+        if len(self.bullets) < self.settings.bullets_allowed:
+            new_bullet = Bullet(self)
+            # add() é similar a append(), porém foi uma método especificamente para lidar 
+            # com pygame.groups
+            self.bullets.add(new_bullet)
+
+    def _update_bullets(self):
+        # Atualizar posições do bullet
+        self.bullets.update()
+        
+        # Eliminar os bullets que desapareceram como não é possivel remover os elementos de uma lista
+        # ou grupo enquanto itera sobre eles, usamos uma copia do groupo de bullets assim conseguimos
+        # referenciar o bullet no grupo principal e removê-lo, caso ele tiver passado do topo da tela.
+        for bullet in self.bullets.copy():
+            if bullet.rect.bottom <= 0:
+                self.bullets.remove(bullet)
+
 
 if __name__ == '__main__':
     # Crie uma instância de jogo e execute o jogo.
