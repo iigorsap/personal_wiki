@@ -1,0 +1,2 @@
+class InvalidBidding(Exception):
+    pass
