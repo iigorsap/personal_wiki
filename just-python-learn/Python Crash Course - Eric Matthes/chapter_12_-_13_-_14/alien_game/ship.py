@@ -10,8 +10,9 @@ class Ship():
         self.screen_rect = ai_game.screen.get_rect()
 
         # Load the ship image and get its rect.
-        self.image = pygame.image.load("alien_game\\images\\ship001.png")
+        self.image = pygame.image.load(r".\chapter_12_-_13_-_14\alien_game\images\ship001.png")
         self.rect = self.image.get_rect()
+        
 
         # Start each new ship at the bottom center of the screen.
         self.rect.midbottom = self.screen_rect.midbottom
@@ -29,6 +30,11 @@ class Ship():
             self.x -= self.settings.ship_speed
         
         self.rect.x = self.x
+
+    def center_ship(self):
+        """center the ship on the screen"""
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.x = float(self.rect.x)
 
     def blitme(self):
         """Draw the ship at its current location."""
