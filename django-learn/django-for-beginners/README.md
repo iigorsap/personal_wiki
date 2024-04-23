@@ -57,6 +57,20 @@ python manage.py createsuperuser
 python manage.py test
 ```
 
+```python
+"""
+Você pode simplesmente redefinir o banco de dados em vez de migrar, mas isso perderá todos os dados existentes. 
+É uma boa prática aprender a migrar um banco de dados e, ao mesmo tempo, manter a integridade dos dados dos usuários. 
+Se quiser começar com um banco de dados novo, execute o comando 
+"""
+python manage.py flush 
+"""
+Dessa forma você consegue reconstruir a estrutura do banco de dados. 
+Você terá que criar um novo superusuário, e todos os seus dados serão perdidos.
+"""
+
+```
+
 
 
 ---

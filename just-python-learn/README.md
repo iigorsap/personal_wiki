@@ -2,4 +2,4 @@
 
 | Book | Author            | Pages |
 |:----:|-------------------|-------|
-|**Python Crash Course**| Eric Matthes |276/**554**|
+|**Python Crash Course**| Eric Matthes |304/**554**|

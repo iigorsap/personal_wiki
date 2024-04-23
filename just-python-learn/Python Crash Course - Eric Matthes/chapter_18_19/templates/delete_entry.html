@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="{% url 'learning_logs:delete_entry' entry.id %}" method="post">
+        {% csrf_token %}
+        <p>Are you sure you're excluding the entry?</p>
+    
+        <button type="submit"> Delete entry {{ entry.id }}</button>
+    </form>    
+{% endblock content %}
+    
