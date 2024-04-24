@@ -1,0 +1,26 @@
+Propriedade position
+
+Static(Default)
+
+-Ordem que aparece na tela é o fluxo normal, a mesma ordem do HTML
+
+Relative
+
+- Relativo a ele mesmo.
+- Reposiciona tomando como base a posição original.
+- Os elementos ao seu redor continuam na mesma posição, é como se o posicionamento
+original do mesmo fosse preservado.
+
+Absolute
+
+- Muda o fluxo do documento
+- Relativo ao container posicionado
+
+Fixed
+
+- Muda o fluxo do documento
+-Relativo a janela do browser
+
+Propriedade z-index (default z-index: 0)
+
+- Diz quais elementos ficam por cima do outro

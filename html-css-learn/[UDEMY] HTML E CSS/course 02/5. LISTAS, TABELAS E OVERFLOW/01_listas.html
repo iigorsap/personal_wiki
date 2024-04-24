@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<html>
+    <head>
+        <title>Listas, Tabelas...</title>
+        <meta charset="utf-8">
+        <meta name=author content="Igor Santiago">
+        <meta name=description content="">
+        <meta name=keywords content="">
+
+        <style>
+            li ul{
+                height: 0;
+                overflow: hidden;
+                transition: height 0.5s;
+            }
+
+            li:hover{
+                background: #ccc;
+            }
+
+            li:hover ul{
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+                <ul>
+                    <li>item 2.1</li>
+                    <li>item 2.2</li>
+                </ul>
+            <li>item 3</li>
+        </ul>               
+        
+        <hr>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação de Hypertexto</dd>
+        
+            <dt>CSS</dt>
+            <dd>Linguagem para criação de folha de estilos.</dd>        
+        </dl>
+
+        <dl>
+            <dt>www</dt>
+            <dt>internet</dt>
+            <dd>Rede mundial de computadores</dd>
+
+            <dt>Javascript</dt>
+            <dd>Linguagem script para internet</dd>
+            <dd>script para rodar no browser</dd>
+        </dl>
+
+    </body>
+</html>

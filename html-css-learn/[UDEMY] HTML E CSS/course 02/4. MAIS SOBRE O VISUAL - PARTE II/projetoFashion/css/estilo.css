@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, sans-serif;  
+    background-color: white;
+    margin: 0;
+    padding: 0%;
+}
+
+#principal{
+    width: 1024px;
+    margin: 20px auto;
+}
+
+.header-top{
+    background-color: #162028;
+    height: 50px;
+    position: relative;
+}
+
+.header-top img{
+    margin: 5px 0 0 200px;
+}
+
+.header-top nav{
+    position: absolute;
+    top: 0;
+    right: 80px;
+    height: 100%;
+}
+
+.header-top nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.header-top nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    letter-spacing: 5px;
+}
+
+.header-top nav a{
+    color:#425564;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s linear;
+}
+
+.header-top nav a:hover{
+    color: white;
+}
+.portfolio{
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio h1{
+    color: #252525;
+    margin-top: 60px;
+    font-size: 34px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.portfolio p{
+    margin: 60- 100px;
+    color: rgb(61, 60, 60);
+    text-align: center;
+    line-height: 2;
+}
+
+.gallery{
+    padding: 0 100px 50px 100px;
+    overflow: auto;
+}
+.gallery .card{
+    display: inline-block;
+    width: 33%;
+    float: left;
+}
+
+.gallery .name{
+    color: rgb(61, 60, 60);
+    letter-spacing: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gallery .description{
+    color: grey;
+    text-align: center;
+}
+
+.about{
+    background-color: #003D52;
+    padding: 100px;
+    color: white;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.about p{
+    line-height: 2.0;
+    width: 70%;
+
+}
+.about h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.contact{
+    background-color:white;
+}
+
+.contact address{
+    color:#003D52;
+    margin: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer .copy{
+    background-color:#02141a;
+    margin: 50px 0px;
+    padding: 25px;
+}
+
+footer .copy p{
+    color: rgb(201, 197, 197);
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 12px;
+}

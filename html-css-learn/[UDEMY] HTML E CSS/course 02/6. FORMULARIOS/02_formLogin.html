@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="utf-8">
+        <meta name=author content="Igor Santiago">
+        <meta name=description content="">
+        <meta name=keywords content="">
+
+        <style>
+            .formLogin{
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .formLogin label{
+                margin-top: 15px;
+                display: block;
+            }
+
+            .formLogin fieldset{
+                background-color:gray;
+            }
+
+            #user, #pass, .btn{
+                border: none;
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 5px;
+                font-size: 18px;
+            }
+
+            #user, #pass{
+                margin-bottom: 15px;
+            }
+            
+            #user:focus, #pass:focus{
+                background-color: rgba(128, 128, 128, 0.185);
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h1>Formularios</h1>
+        <form action="#" method="POST" class="formLogin">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="log">User:</label>
+                <input type="text" name="text" id="user" autofocus> 
+                <label for="pass">Pass:</label>
+                <input type="password" name="pass" id="pass">
+                <input type="submit" value="Logar" class="btn">
+            </fieldset>
+        </form>
+    </body>
+</html>

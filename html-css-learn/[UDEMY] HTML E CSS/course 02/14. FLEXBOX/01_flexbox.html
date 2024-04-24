@@ -1,0 +1,49 @@
+<!doctype html>
+<!--doctype informa ao agente de usuario a versao do html que deve ser renderizada-->
+<html lang="pt-br">
+<html>
+    <head>
+        <title> </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Igor Santiago">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+    <style>
+        .flex-conteiner{
+            width: 250px;
+            height: 250px;
+            border:solid 3px black;
+            display: flex;
+            /* flex-direction:row; - muda a direção
+            flex-wrap: nowrap; - Quebra linha ou não */
+            flex-flow: row nowrap; /* Atalho para as duas acima 2 em 1 */ 
+            margin-bottom: 15px;
+        }
+
+        .flex-conteiner div{
+            background-color: orange;
+            width: 100px;
+            margin: 15px;
+        }
+        
+    </style>
+    </head>
+
+    <body>
+        <div class="flex-conteiner">
+            <div class="flex-item1">1</div>
+            <div class="flex-item2">2</div>
+            <div class="flex-item3">3</div>
+            <div class="flex-item4">4</div>
+            
+        </div>
+        <div class="flex-conteiner">
+            <div class="flex-item1">1</div>
+            <div class="flex-item2">2</div>
+            <div class="flex-item3">3</div>
+            <div class="flex-item4">4</div>
+            
+        </div>
+    </body>
+</html>
