@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Useful event target example</title>
+        <style>
+            .tile {
+                height: 100px;
+                width: 25%;
+                float: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <div>
+                <label for="fname">First name: </label>
+                <input id="fname" type="text">
+            </div>
+            <div>
+                <label for="lname">Last name: </label>
+                <input id="lname" type="text">
+            </div>
+            <div>
+                <input id="submit" type="submit">
+            </div>
+        </form>
+        <div id="div-after"></div>
+
+        <div id="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+
+        <script>
+            function random(number) {
+                return Math.floor(Math.random() * number);
+            }
+
+            function bgChange() {
+                const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+                return rndCol;
+            }
+
+            // const container = document.querySelector("#container");
+            // container.addEventListener(
+            //     "click",
+            //     (event) => (event.target.style.backgroundColor = bgChange())
+            // );
+            // equivalente anterior
+            var divs = document.querySelectorAll("#container div");
+
+            for (let i = 0; i < divs.length; i++) {
+                divs[i].onclick = function (e) {
+                    e.target.style.backgroundColor = bgChange();
+                };
+
+            }
+
+            // previnindo o comportamento padrão"
+            var form = document.querySelector("form");
+            var fname = document.getElementById("fname");
+            var lname = document.getElementById("lname");
+            var para = document.querySelector("#div-after");
+            
+            form.addEventListener('submit', (event) => {
+                if (fname.value === "" || lname.value === "") {
+                    event.preventDefault();
+                    para.textContent = "You need to fill in the both names!";
+                    
+                }
+            });
+            
+        </script>
+    </body>
+
+</html>
