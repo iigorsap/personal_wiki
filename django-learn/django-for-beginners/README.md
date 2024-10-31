@@ -302,6 +302,20 @@ class {NameModel}(models.Model):
       return self.text[:50]
 ```
 
+Podemos consultar nosso banco utilizando o manage.py, apenas digitando no terminal 
+Caso necessário baixar as dependências necessárias.
+```bash
+[1]: python manage.py shell -i ipython
+```
+
+Posteriomente podemos acessar os modelos do django usando o DjangoORM.
+```bash
+[0]: from app.models import Item
+
+[1]: Models.objects.all()
+[2]: Models.objects.last()
+```
+
 ### Views/Templates/URLs
 
 Para exibir nosso database no site precisamos fazer o link com as nossas views, templates e urls.
