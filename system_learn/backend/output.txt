@@ -1,0 +1,102 @@
+2025-06-20 22:00:30,960 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-06-20 22:00:30,961 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("user")
+2025-06-20 22:00:30,961 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-06-20 22:00:30,965 INFO sqlalchemy.engine.Engine PRAGMA temp.table_info("user")
+2025-06-20 22:00:30,965 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-06-20 22:00:30,966 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("post")
+2025-06-20 22:00:30,966 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-06-20 22:00:30,968 INFO sqlalchemy.engine.Engine PRAGMA temp.table_info("post")
+2025-06-20 22:00:30,968 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-06-20 22:00:30,969 INFO sqlalchemy.engine.Engine 
+CREATE TABLE user (
+	id INTEGER NOT NULL, 
+	name VARCHAR(30) NOT NULL, 
+	last_login DATETIME, 
+	PRIMARY KEY (id)
+)
+
+
+2025-06-20 22:00:30,971 INFO sqlalchemy.engine.Engine [no key 0.00073s] ()
+2025-06-20 22:00:31,099 INFO sqlalchemy.engine.Engine 
+CREATE TABLE post (
+	id INTEGER NOT NULL, 
+	title VARCHAR(50) NOT NULL, 
+	content TEXT NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES user (id)
+)
+
+
+2025-06-20 22:00:31,099 INFO sqlalchemy.engine.Engine [no key 0.00029s] ()
+2025-06-20 22:00:31,172 INFO sqlalchemy.engine.Engine COMMIT
+2025-06-20 22:00:31,177 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-06-20 22:00:31,178 INFO sqlalchemy.engine.Engine INSERT INTO user (name, last_login) VALUES (?, ?) RETURNING id
+2025-06-20 22:00:31,178 INFO sqlalchemy.engine.Engine [generated in 0.00008s (insertmanyvalues) 1/2 (ordered; batch not supported)] ('Anthony', None)
+2025-06-20 22:00:31,185 INFO sqlalchemy.engine.Engine INSERT INTO user (name, last_login) VALUES (?, ?) RETURNING id
+2025-06-20 22:00:31,185 INFO sqlalchemy.engine.Engine [insertmanyvalues 2/2 (ordered; batch not supported)] ('Kim', '2025-06-21 01:00:31.176590')
+2025-06-20 22:00:31,186 INFO sqlalchemy.engine.Engine COMMIT
+2025-06-20 22:00:31,252 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-06-20 22:00:31,254 INFO sqlalchemy.engine.Engine SELECT user.id AS user_id, user.name AS user_name, user.last_login AS user_last_login 
+FROM user 
+WHERE user.id = ?
+2025-06-20 22:00:31,254 INFO sqlalchemy.engine.Engine [generated in 0.00033s] (1,)
+2025-06-20 22:00:31,257 INFO sqlalchemy.engine.Engine SELECT post.id AS post_id, post.title AS post_title, post.content AS post_content, post.user_id AS post_user_id 
+FROM post 
+WHERE ? = post.user_id
+2025-06-20 22:00:31,257 INFO sqlalchemy.engine.Engine [generated in 0.00026s] (1,)
+2025-06-20 22:00:31,259 INFO sqlalchemy.engine.Engine INSERT INTO post (title, content, user_id) VALUES (?, ?, ?) RETURNING id
+2025-06-20 22:00:31,260 INFO sqlalchemy.engine.Engine [generated in 0.00005s (insertmanyvalues) 1/3 (ordered; batch not supported)] ("Anthony's first post", 'Hello world!', 1)
+2025-06-20 22:00:31,264 INFO sqlalchemy.engine.Engine INSERT INTO post (title, content, user_id) VALUES (?, ?, ?) RETURNING id
+2025-06-20 22:00:31,264 INFO sqlalchemy.engine.Engine [insertmanyvalues 2/3 (ordered; batch not supported)] ("Anthony's second post", 'Hello world!', 1)
+2025-06-20 22:00:31,264 INFO sqlalchemy.engine.Engine INSERT INTO post (title, content, user_id) VALUES (?, ?, ?) RETURNING id
+2025-06-20 22:00:31,264 INFO sqlalchemy.engine.Engine [insertmanyvalues 3/3 (ordered; batch not supported)] ("Anthony's third post", 'Hello again!', 1)
+2025-06-20 22:00:31,265 INFO sqlalchemy.engine.Engine SELECT user.id AS user_id, user.name AS user_name, user.last_login AS user_last_login 
+FROM user 
+WHERE user.id = ?
+2025-06-20 22:00:31,265 INFO sqlalchemy.engine.Engine [cached since 0.0111s ago] (2,)
+2025-06-20 22:00:31,265 INFO sqlalchemy.engine.Engine SELECT post.id AS post_id, post.title AS post_title, post.content AS post_content, post.user_id AS post_user_id 
+FROM post 
+WHERE ? = post.user_id
+2025-06-20 22:00:31,266 INFO sqlalchemy.engine.Engine [cached since 0.009086s ago] (2,)
+2025-06-20 22:00:31,266 INFO sqlalchemy.engine.Engine INSERT INTO post (title, content, user_id) VALUES (?, ?, ?) RETURNING id
+2025-06-20 22:00:31,266 INFO sqlalchemy.engine.Engine [cached since 0.007012s ago (insertmanyvalues) 1/2 (ordered; batch not supported)] ("Kim's first post", 'Hello again!', 2)
+2025-06-20 22:00:31,267 INFO sqlalchemy.engine.Engine INSERT INTO post (title, content, user_id) VALUES (?, ?, ?) RETURNING id
+2025-06-20 22:00:31,267 INFO sqlalchemy.engine.Engine [insertmanyvalues 2/2 (ordered; batch not supported)] ("Kim's second post", 'Hello again!', 2)
+2025-06-20 22:00:31,268 INFO sqlalchemy.engine.Engine COMMIT
+2025-06-20 22:00:31,339 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-06-20 22:00:31,340 INFO sqlalchemy.engine.Engine SELECT user.id, user.name, user.last_login 
+FROM user
+2025-06-20 22:00:31,340 INFO sqlalchemy.engine.Engine [generated in 0.00037s] ()
+User(id=1, name=Anthony)
+2025-06-20 22:00:31,342 INFO sqlalchemy.engine.Engine SELECT post.id AS post_id, post.title AS post_title, post.content AS post_content, post.user_id AS post_user_id 
+FROM post 
+WHERE ? = post.user_id
+2025-06-20 22:00:31,342 INFO sqlalchemy.engine.Engine [cached since 0.08581s ago] (1,)
+  Post(id=1, title=Anthony's first post)
+  Post(id=2, title=Anthony's second post)
+  Post(id=3, title=Anthony's third post)
+User(id=2, name=Kim)
+2025-06-20 22:00:31,344 INFO sqlalchemy.engine.Engine SELECT post.id AS post_id, post.title AS post_title, post.content AS post_content, post.user_id AS post_user_id 
+FROM post 
+WHERE ? = post.user_id
+2025-06-20 22:00:31,344 INFO sqlalchemy.engine.Engine [cached since 0.08756s ago] (2,)
+  Post(id=4, title=Kim's first post)
+  Post(id=5, title=Kim's second post)
+Found user: User(id=1, name=Anthony)
+2025-06-20 22:00:31,346 INFO sqlalchemy.engine.Engine SELECT user.id, user.name, user.last_login 
+FROM user 
+WHERE user.name = ?
+2025-06-20 22:00:31,347 INFO sqlalchemy.engine.Engine [generated in 0.00024s] ('Kim',)
+Found user: User(id=2, name=Kim)
+2025-06-20 22:00:31,349 INFO sqlalchemy.engine.Engine SELECT post.id, post.title, post.content, post.user_id 
+FROM post 
+WHERE ? = post.user_id ORDER BY post.id DESC
+2025-06-20 22:00:31,349 INFO sqlalchemy.engine.Engine [generated in 0.00027s] (1,)
+Post(id=3, title=Anthony's third post)
+  User(id=1, name=Anthony)
+Post(id=2, title=Anthony's second post)
+  User(id=1, name=Anthony)
+Post(id=1, title=Anthony's first post)
+  User(id=1, name=Anthony)
+2025-06-20 22:00:31,350 INFO sqlalchemy.engine.Engine ROLLBACK

@@ -1,0 +1,22 @@
+uv instala dependencias utilizando uv add
+uv sync entra o cli do python, cria uma venv chamada .venv e instala todas as dependencias added
+---
+
+para criar nao pode ter um arquivo pyproject.toml se nao ele sabe que tem um projeto criado
+
+
+uv init --app --python=3.12
+
+
+ele cria:
+.python-version
+pyproject.toml (Sem dependências)
+NÃO sobreescreve o REAMDE.md
+
+
+uv add -r requirements.txt
+
+cria a venv
+instala todas as dependências e adiciona no pyproject.toml e atualiza uv.lock
+
+e com projeto que ja tem pyproject.toml e o uv.lock, só da um uv sync —locked, ele ja cria a venv e instala as dependencias

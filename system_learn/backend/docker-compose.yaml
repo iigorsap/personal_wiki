@@ -1,0 +1,30 @@
+services:
+    api:
+        build: .
+        container_name: fastapi
+        ports:
+            - "8000:8000"
+        develop:
+            watch:
+                - action: sync
+                  path: .
+                  target: /app
+                  ignore:
+                      - .venv/
+                # rebuild image and recreate service
+                - path: .
+                  action: rebuild
+    db:
+        image: postgres:17
+        container_name: postgres
+        environment:
+            POSTGRES_USER: admin
+            POSTGRES_PASSWORD: admin
+            POSTGRES_DB: db-events
+        ports:
+            - "5432:5432"
+        volumes:
+            - our-wedding-db:/var/lib/postgresql/data
+
+volumes:
+    our-wedding-db:
